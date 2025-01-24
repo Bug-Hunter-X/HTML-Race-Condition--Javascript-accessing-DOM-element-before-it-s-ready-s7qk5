@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Incorrectly attempting to access the element before it's fully parsed
+    const myDiv = document.getElementById('myDiv');
+    myDiv.innerHTML = 'Text changed!'; // This might fail if the script runs too early
+  </script>
+</body>
+</html>
